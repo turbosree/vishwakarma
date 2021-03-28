@@ -5,7 +5,7 @@
 #// ------------------------------------------------------------------------------------------
 
 FROM alpine:3.12
-RUN apk add build-base && \
+RUN apk add build-base git && \
     git clone https://github.com/turbosree/vishwakarma.git && \
     make -C vishwakarma/IIoTFullSystem-Simulation/ clean && \
     make -C vishwakarma/IIoTFullSystem-Simulation/

@@ -508,11 +508,21 @@ int main(int argc, char *argv[])
    cout<<"Results:"<<endl;
 
    struct SimulationArgs args;
-   args.arg1 = atoi(argv[1]);
-   args.arg2 = atoi(argv[2]);
-   args.arg3 = atoi(argv[3]);
-   args.arg4 = atoi(argv[4]);
-
+   if(argc >= 5)
+   {
+      args.arg1 = atoi(argv[1]);
+      args.arg2 = atoi(argv[2]);
+      args.arg3 = atoi(argv[3]);
+      args.arg4 = atoi(argv[4]);
+   }
+   else
+   {
+      // default simulation setting
+      args.arg1 = 1000000;
+      args.arg2 = 3;
+      args.arg3 = 100;
+      args.arg4 = 0;
+   }
 
    // Create a real-time simulation thread using real-time extentions of Linux Kernel
    int result = pthread_create(&RTThread1, NULL, &RTThread1Function, (void*)&args);
