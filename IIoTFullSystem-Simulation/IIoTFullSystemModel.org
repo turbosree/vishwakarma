@@ -1,0 +1,73 @@
+#+BEGIN_EXAMPLE
+
+
+
+
+
+                                                        +---------------------------------+                    +------------------------+
+                                                        |       MessageBatch              |                    |     Item               |
+      +--------------------------------+                |                                 |                    |                        |
+      |        FieldBusDevice          |                |   + MessageBatch()              |                    |  + Type                |
+      |                                |                |                                 |                    |                        |
+      |  + ProcessMessages()           |                |   + Messages                    |                    |                        |
+      |                                |                |                                 |                    |                        |
+      |  + State                       +--+             |                                 |                    |                        |
+      |  + Item1                       |  |             |                                 |                    |                        |
+      |  + Item2                       |  |             |                                 |                    |                        |
+      |  + Name                        |  |             +-----------------+---------------+                    |                        |
+      |                                |  |                               |                                    +------------------------+
+      +--------------------------------+  |                               |
+                                          |        +----------------------+----------------------------+
+                                          |        |                IIoTFullSystemModel                |                      +----------------------+
+                                          |        |                                                   |                      |     CalculateKPIs    |
+  +----------------------+                |        |    + ProtocolMsgBatchBuilderStage()               |                      |                      |
+  |  SimulationDataTypes |                |        |    + PushMsgBatchToFieldBusStage()                |                      |  + CalculateKPIs()   |
+  |                      |                +--------+    + FieldBusDeviceProcessMsgStage()              +----------------------+                      |
+  | + Type               |                         |    + FieldBusProtocolMsgInspectionStage()         |                      |  + Future            |
+  | + KPIs               |                         |    + KPICalculationStage()                        |                      |  + Promise           |
+  |                      |                         |    + MoveForwardFieldBusBusProtocolStage()        |                      |                      |
+  |                      |                         |    - CurrentBatch                                 |                      |                      |
+  |                      |                         |    - KPIs                                         |                      |                      |
+  |                      |               +---------+    - NumOfFieldBuses                              |                      +-----------+----------+
+  |                      |               |         |    - RandomizeCurrentBatch                        |                                  |
+  |                      |               |         |    - Devices                                      |                                  | 
+  |                      |               |         |    - Buses                                        |                                  | 
+  |                      |               |         |    - Batches                                      |                                  | 
+  +----------------------+               |         +---------------------------+-----------------------+                                  |  
+                                         |                                     |                                              +-----------+------------+
+                                         |                                     |Instantiate and execute                       |    KPIReport           |
+      +-------------------------------+  |                                     |                                              |                        |
+      |      FieldBus                 |  |                     +---------------+--------------------+                         | + Show()               |
+      |                               |  |                     |          RealTimeThread            |                         |                        |
+      |  + LoadItem()                 |  |                     |                                    |                         | + Future               |
+      |                               +--+                     |    + RTThread1Function()           |                         | + Data                 |
+      |  + CurrentItem                |                        |    + RTMakePeriodic()              |                         |                        |
+      |                               |                        |    + RTWaitPeriod()                |                         |                        |
+      |                               |                        |                                    |                         |                        |
+      |                               |                        |    + RTTimer                       |                         +------------------------+
+      |                               |                        |                                    |
+      |                               |                        |                                    |
+      +-------------------------------+                        |                                    |
+                                                               |                                    |
+                                                               +------------------------------------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+END_EXAMPLE
+
+

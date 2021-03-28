@@ -1,0 +1,1115 @@
+
+
+Running Simulation with 5 arguments: ./RunSimulation 1000000 3 100 0 
+
+
+Results:
+Simulation unit of time (cycle) in us: 1000000
+Number of IoT layers in Simulation: 3
+Number of steps to run Simulation: 100
+Randomize messages in batch: 0
+
+
+Simulation cycle:     0
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 0    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 0    TypeQ: 0    Queued: 4    Throughput: 0
+
+
+
+
+
+Simulation cycle:     1
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 1    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 0    TypeQ: 0    Queued: 7    Throughput: 0
+
+
+
+
+
+Simulation cycle:     2
+Current batch:        | C |   | A | -->
+Bus status: | A |   |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][   ]---[   ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 2    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 0    TypeQ: 0    Queued: 10    Throughput: 0
+
+
+
+
+
+Simulation cycle:     3
+Current batch:        | C |   | -->
+Bus status: |   |   |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 3    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 0    TypeQ: 0    Queued: 13    Throughput: 0
+
+
+
+
+
+Simulation cycle:     4
+Current batch:        | C | -->
+Bus status: | C | P |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 4    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 0    TypeQ: 0    Queued: 16    Throughput: 0
+
+
+
+
+
+Simulation cycle:     5
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | P |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][   ]---[   ][ C ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 5    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 0    TypeQ: 0    Queued: 20    Throughput: 0
+
+
+
+
+
+Simulation cycle:     6
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   |   | P |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][   ]---[ A ][ C ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 6    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 0    TypeQ: 0    Queued: 23    Throughput: 0
+
+
+
+
+
+Simulation cycle:     7
+Current batch:        | C |   | A | -->
+Bus status: | A |   |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ B ]---[ A ][ C ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 7    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 1    TypeQ: 0    Queued: 26    Throughput: 1
+
+
+
+
+
+Simulation cycle:     8
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ B ]---[ A ][ C ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 8    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 1    TypeQ: 0    Queued: 29    Throughput: 1
+
+
+
+
+
+Simulation cycle:     9
+Current batch:        | C | -->
+Bus status: | C | P |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][   ]---[ A ][ C ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 9    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 1    TypeQ: 0    Queued: 32    Throughput: 1
+
+
+
+
+
+Simulation cycle:     10
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | P |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 10    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 1    TypeQ: 0    Queued: 36    Throughput: 1
+
+
+
+
+
+Simulation cycle:     11
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   |   | P |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 11    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 1    TypeQ: 0    Queued: 39    Throughput: 1
+
+
+
+
+
+Simulation cycle:     12
+Current batch:        | C |   | A | -->
+Bus status: | A | B |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 12    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 2    TypeQ: 0    Queued: 42    Throughput: 2
+
+
+
+
+
+Simulation cycle:     13
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 13    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 2    TypeQ: 0    Queued: 45    Throughput: 2
+
+
+
+
+
+Simulation cycle:     14
+Current batch:        | C | -->
+Bus status: | C | Q |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][   ]---[ A ][ C ]   [ A ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 14    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 2    TypeQ: 0    Queued: 48    Throughput: 2
+
+
+
+
+
+Simulation cycle:     15
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | Q |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][ C ]---[ A ][ C ]   [ A ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 15    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 2    TypeQ: 0    Queued: 52    Throughput: 2
+
+
+
+
+
+Simulation cycle:     16
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   | P | Q |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 16    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 2    TypeQ: 0    Queued: 55    Throughput: 2
+
+
+
+
+
+Simulation cycle:     17
+Current batch:        | C |   | A | -->
+Bus status: | A | B |   | P | Q |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 17    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 2    TypeQ: 1    Queued: 58    Throughput: 3
+
+
+
+
+
+Simulation cycle:     18
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 18    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 3    TypeQ: 1    Queued: 61    Throughput: 4
+
+
+
+
+
+Simulation cycle:     19
+Current batch:        | C | -->
+Bus status: | C | Q |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[   ][   ]   [ A ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 19    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 3    TypeQ: 1    Queued: 64    Throughput: 4
+
+
+
+
+
+Simulation cycle:     20
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | Q |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[   ][ C ]   [ A ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 20    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 3    TypeQ: 1    Queued: 68    Throughput: 4
+
+
+
+
+
+Simulation cycle:     21
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   | P | Q |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 21    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 3    TypeQ: 1    Queued: 71    Throughput: 4
+
+
+
+
+
+Simulation cycle:     22
+Current batch:        | C |   | A | -->
+Bus status: | A | B |   | P | Q |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 22    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 3    TypeQ: 2    Queued: 74    Throughput: 5
+
+
+
+
+
+Simulation cycle:     23
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 23    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 4    TypeQ: 2    Queued: 77    Throughput: 6
+
+
+
+
+
+Simulation cycle:     24
+Current batch:        | C | -->
+Bus status: | C | Q |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[   ][   ]   [ A ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 24    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 4    TypeQ: 2    Queued: 80    Throughput: 6
+
+
+
+
+
+Simulation cycle:     25
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | Q |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[   ][ C ]   [ A ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 25    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 4    TypeQ: 2    Queued: 84    Throughput: 6
+
+
+
+
+
+Simulation cycle:     26
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   | P | Q |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 26    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 4    TypeQ: 2    Queued: 87    Throughput: 6
+
+
+
+
+
+Simulation cycle:     27
+Current batch:        | C |   | A | -->
+Bus status: | A | B |   | P | Q |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 27    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 4    TypeQ: 3    Queued: 90    Throughput: 7
+
+
+
+
+
+Simulation cycle:     28
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][ B ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 28    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 5    TypeQ: 3    Queued: 93    Throughput: 8
+
+
+
+
+
+Simulation cycle:     29
+Current batch:        | C | -->
+Bus status: | C | Q |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][   ]---[ A ][ C ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 29    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 5    TypeQ: 3    Queued: 96    Throughput: 8
+
+
+
+
+
+Simulation cycle:     30
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | Q |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][ C ]---[ A ][ C ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 30    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 5    TypeQ: 3    Queued: 100    Throughput: 8
+
+
+
+
+
+Simulation cycle:     31
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   | P | Q |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 31    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 5    TypeQ: 3    Queued: 103    Throughput: 8
+
+
+
+
+
+Simulation cycle:     32
+Current batch:        | C |   | A | -->
+Bus status: | A | B |   | P | Q |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 32    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 5    TypeQ: 4    Queued: 106    Throughput: 9
+
+
+
+
+
+Simulation cycle:     33
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 33    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 6    TypeQ: 4    Queued: 109    Throughput: 10
+
+
+
+
+
+Simulation cycle:     34
+Current batch:        | C | -->
+Bus status: | C | Q |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[   ][   ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 34    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 6    TypeQ: 4    Queued: 112    Throughput: 10
+
+
+
+
+
+Simulation cycle:     35
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | Q |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[   ][ C ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 35    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 6    TypeQ: 4    Queued: 116    Throughput: 10
+
+
+
+
+
+Simulation cycle:     36
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   | P | Q |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 36    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 6    TypeQ: 4    Queued: 119    Throughput: 10
+
+
+
+
+
+Simulation cycle:     37
+Current batch:        | C |   | A | -->
+Bus status: | A | B |   | P | Q |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 37    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 6    TypeQ: 5    Queued: 122    Throughput: 11
+
+
+
+
+
+Simulation cycle:     38
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 38    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 7    TypeQ: 5    Queued: 125    Throughput: 12
+
+
+
+
+
+Simulation cycle:     39
+Current batch:        | C | -->
+Bus status: | C | Q |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][   ]---[ A ][ C ]   [ A ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 39    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 7    TypeQ: 5    Queued: 128    Throughput: 12
+
+
+
+
+
+Simulation cycle:     40
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | Q |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][ C ]---[ A ][ C ]   [ A ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 40    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 7    TypeQ: 5    Queued: 132    Throughput: 12
+
+
+
+
+
+Simulation cycle:     41
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   | P | Q |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 41    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 7    TypeQ: 5    Queued: 135    Throughput: 12
+
+
+
+
+
+Simulation cycle:     42
+Current batch:        | C |   | A | -->
+Bus status: | A | B |   | P | Q |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 42    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 7    TypeQ: 6    Queued: 138    Throughput: 13
+
+
+
+
+
+Simulation cycle:     43
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][ B ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 43    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 8    TypeQ: 6    Queued: 141    Throughput: 14
+
+
+
+
+
+Simulation cycle:     44
+Current batch:        | C | -->
+Bus status: | C | Q |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][   ]---[ A ][ C ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 44    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 8    TypeQ: 6    Queued: 144    Throughput: 14
+
+
+
+
+
+Simulation cycle:     45
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | Q |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][ C ]---[ A ][ C ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 45    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 8    TypeQ: 6    Queued: 148    Throughput: 14
+
+
+
+
+
+Simulation cycle:     46
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   | P | Q |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 46    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 8    TypeQ: 6    Queued: 151    Throughput: 14
+
+
+
+
+
+Simulation cycle:     47
+Current batch:        | C |   | A | -->
+Bus status: | A | B |   | P | Q |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 47    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 8    TypeQ: 7    Queued: 154    Throughput: 15
+
+
+
+
+
+Simulation cycle:     48
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 48    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 7    Queued: 157    Throughput: 16
+
+
+
+
+
+Simulation cycle:     49
+Current batch:        | C | -->
+Bus status: | C | Q |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[   ][   ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 49    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 7    Queued: 160    Throughput: 16
+
+
+
+
+
+Simulation cycle:     50
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | Q |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[   ][ C ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 50    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 7    Queued: 164    Throughput: 16
+
+
+
+
+
+Simulation cycle:     51
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   | P | Q |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 51    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 7    Queued: 167    Throughput: 16
+
+
+
+
+
+Simulation cycle:     52
+Current batch:        | C |   | A | -->
+Bus status: | A | B |   | P | Q |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 52    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 8    Queued: 170    Throughput: 17
+
+
+
+
+
+Simulation cycle:     53
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 53    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 10    TypeQ: 8    Queued: 173    Throughput: 18
+
+
+
+
+
+Simulation cycle:     54
+Current batch:        | C | -->
+Bus status: | C | Q |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[   ][   ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 54    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 10    TypeQ: 8    Queued: 176    Throughput: 18
+
+
+
+
+
+Simulation cycle:     55
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | Q |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[   ][ C ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 55    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 10    TypeQ: 8    Queued: 180    Throughput: 18
+
+
+
+
+
+Simulation cycle:     56
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   | P | Q |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 56    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 10    TypeQ: 8    Queued: 183    Throughput: 18
+
+
+
+
+
+Simulation cycle:     57
+Current batch:        | C |   | A | -->
+Bus status: | A | B |   | P | Q |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 57    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 10    TypeQ: 9    Queued: 186    Throughput: 19
+
+
+
+
+
+Simulation cycle:     58
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 58    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 11    TypeQ: 9    Queued: 189    Throughput: 20
+
+
+
+
+
+Simulation cycle:     59
+Current batch:        | C | -->
+Bus status: | C | Q |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][   ]---[ A ][ C ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 59    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 11    TypeQ: 9    Queued: 192    Throughput: 20
+
+
+
+
+
+Simulation cycle:     60
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | Q |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][ C ]---[ A ][ C ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 60    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 11    TypeQ: 9    Queued: 196    Throughput: 20
+
+
+
+
+
+Simulation cycle:     61
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   | P | Q |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 61    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 11    TypeQ: 9    Queued: 199    Throughput: 20
+
+
+
+
+
+Simulation cycle:     62
+Current batch:        | C |   | A | -->
+Bus status: | A | B |   | P | Q |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 62    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 11    TypeQ: 10    Queued: 202    Throughput: 21
+
+
+
+
+
+Simulation cycle:     63
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 63    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 12    TypeQ: 10    Queued: 205    Throughput: 22
+
+
+
+
+
+Simulation cycle:     64
+Current batch:        | C | -->
+Bus status: | C | Q |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][   ]---[ A ][ C ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 64    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 12    TypeQ: 10    Queued: 208    Throughput: 22
+
+
+
+
+
+Simulation cycle:     65
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | Q |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][ C ]---[ A ][ C ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 65    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 12    TypeQ: 10    Queued: 212    Throughput: 22
+
+
+
+
+
+Simulation cycle:     66
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   | P | Q |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 66    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 12    TypeQ: 10    Queued: 215    Throughput: 22
+
+
+
+
+
+Simulation cycle:     67
+Current batch:        | C |   | A | -->
+Bus status: | A | B |   | P | Q |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 67    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 12    TypeQ: 11    Queued: 218    Throughput: 23
+
+
+
+
+
+Simulation cycle:     68
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 68    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 13    TypeQ: 11    Queued: 221    Throughput: 24
+
+
+
+
+
+Simulation cycle:     69
+Current batch:        | C | -->
+Bus status: | C | Q |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[   ][   ]   [ A ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 69    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 13    TypeQ: 11    Queued: 224    Throughput: 24
+
+
+
+
+
+Simulation cycle:     70
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | Q |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[   ][ C ]   [ A ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 70    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 13    TypeQ: 11    Queued: 228    Throughput: 24
+
+
+
+
+
+Simulation cycle:     71
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   | P | Q |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 71    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 13    TypeQ: 11    Queued: 231    Throughput: 24
+
+
+
+
+
+Simulation cycle:     72
+Current batch:        | C |   | A | -->
+Bus status: | A | B |   | P | Q |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 72    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 13    TypeQ: 12    Queued: 234    Throughput: 25
+
+
+
+
+
+Simulation cycle:     73
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 73    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 14    TypeQ: 12    Queued: 237    Throughput: 26
+
+
+
+
+
+Simulation cycle:     74
+Current batch:        | C | -->
+Bus status: | C | Q |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[   ][   ]   [ A ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 74    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 14    TypeQ: 12    Queued: 240    Throughput: 26
+
+
+
+
+
+Simulation cycle:     75
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | Q |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[   ][ C ]   [ A ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 75    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 14    TypeQ: 12    Queued: 244    Throughput: 26
+
+
+
+
+
+Simulation cycle:     76
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   | P | Q |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 76    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 14    TypeQ: 12    Queued: 247    Throughput: 26
+
+
+
+
+
+Simulation cycle:     77
+Current batch:        | C |   | A | -->
+Bus status: | A | B |   | P | Q |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 77    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 14    TypeQ: 13    Queued: 250    Throughput: 27
+
+
+
+
+
+Simulation cycle:     78
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][ B ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 78    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 15    TypeQ: 13    Queued: 253    Throughput: 28
+
+
+
+
+
+Simulation cycle:     79
+Current batch:        | C | -->
+Bus status: | C | Q |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[   ][   ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 79    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 15    TypeQ: 13    Queued: 256    Throughput: 28
+
+
+
+
+
+Simulation cycle:     80
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | Q |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[   ][ C ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 80    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 15    TypeQ: 13    Queued: 260    Throughput: 28
+
+
+
+
+
+Simulation cycle:     81
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   | P | Q |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 81    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 15    TypeQ: 13    Queued: 263    Throughput: 28
+
+
+
+
+
+Simulation cycle:     82
+Current batch:        | C |   | A | -->
+Bus status: | A | B |   | P | Q |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 82    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 15    TypeQ: 14    Queued: 266    Throughput: 29
+
+
+
+
+
+Simulation cycle:     83
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 83    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 16    TypeQ: 14    Queued: 269    Throughput: 30
+
+
+
+
+
+Simulation cycle:     84
+Current batch:        | C | -->
+Bus status: | C | Q |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][   ]---[ A ][ C ]   [ A ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 84    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 16    TypeQ: 14    Queued: 272    Throughput: 30
+
+
+
+
+
+Simulation cycle:     85
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | Q |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][ C ]---[ A ][ C ]   [ A ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 85    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 16    TypeQ: 14    Queued: 276    Throughput: 30
+
+
+
+
+
+Simulation cycle:     86
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   | P | Q |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 86    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 16    TypeQ: 14    Queued: 279    Throughput: 30
+
+
+
+
+
+Simulation cycle:     87
+Current batch:        | C |   | A | -->
+Bus status: | A | B |   | P | Q |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 87    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 16    TypeQ: 15    Queued: 282    Throughput: 31
+
+
+
+
+
+Simulation cycle:     88
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [ A ][ B ]---[   ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 88    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 17    TypeQ: 15    Queued: 285    Throughput: 32
+
+
+
+
+
+Simulation cycle:     89
+Current batch:        | C | -->
+Bus status: | C | Q |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][   ]---[ A ][ C ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 89    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 17    TypeQ: 15    Queued: 288    Throughput: 32
+
+
+
+
+
+Simulation cycle:     90
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | Q |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][ C ]---[ A ][ C ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 90    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 17    TypeQ: 15    Queued: 292    Throughput: 32
+
+
+
+
+
+Simulation cycle:     91
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   | P | Q |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 91    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 17    TypeQ: 15    Queued: 295    Throughput: 32
+
+
+
+
+
+Simulation cycle:     92
+Current batch:        | C |   | A | -->
+Bus status: | A | B |   | P | Q |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 92    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 17    TypeQ: 16    Queued: 298    Throughput: 33
+
+
+
+
+
+Simulation cycle:     93
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 93    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 18    TypeQ: 16    Queued: 301    Throughput: 34
+
+
+
+
+
+Simulation cycle:     94
+Current batch:        | C | -->
+Bus status: | C | Q |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][   ]---[ A ][ C ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 94    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 18    TypeQ: 16    Queued: 304    Throughput: 34
+
+
+
+
+
+Simulation cycle:     95
+Current batch:        | C |   | A | B | A | -->
+Bus status: | A |   | Q |   |   |
+Device status:  [   ][   ]---[   ][   ]   [   ][ C ]---[ A ][ C ]   [ A ][ B ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 95    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 18    TypeQ: 16    Queued: 308    Throughput: 34
+
+
+
+
+
+Simulation cycle:     96
+Current batch:        | C |   | A | B | -->
+Bus status: | B |   | P | Q |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 96    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 18    TypeQ: 16    Queued: 311    Throughput: 34
+
+
+
+
+
+Simulation cycle:     97
+Current batch:        | C |   | A | -->
+Bus status: | A | B |   | P | Q |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][   ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 97    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 18    TypeQ: 17    Queued: 314    Throughput: 35
+
+
+
+
+
+Simulation cycle:     98
+Current batch:        | C |   | -->
+Bus status: |   | A |   |   | P |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[ A ][ C ]   [   ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 98    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 19    TypeQ: 17    Queued: 317    Throughput: 36
+
+
+
+
+
+Simulation cycle:     99
+Current batch:        | C | -->
+Bus status: | C | Q |   |   |   |
+Device status:  [   ][   ]---[   ][   ]   [ A ][ C ]---[   ][   ]   [ A ][   ]---[ A ][ B ]   [   ][   ]---[   ][   ]   [   ][   ]---[   ][   ]   
+
+Uptime (secs): 99    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 19    TypeQ: 17    Queued: 320    Throughput: 36
+
+
+
+Number of items created: 616
+Number of items destroyed: 289
+
+
+
