@@ -385,7 +385,7 @@ void IIoTFullSystemModel::MoveForwardFieldBusProtocolStage(void)
 void IIoTFullSystemModel::ShowFieldBus(void)
 {
    // Print type of messages appear on the bus
-   cout<<"Bus status: ";
+   cout<<"Bus status:           ";
    for(auto& port : Buses)
    {
       if(port->pCurrentItem != nullptr)
@@ -425,10 +425,15 @@ void IIoTFullSystemModel::ShowFieldBus(void)
 void IIoTFullSystemModel::ShowFieldBusDevices(void)
 {
    // Print items on the bus
-   cout<<"Device status:  ";
+   cout<<"Device status:        ";
    int i = 0;
    for(auto& device : Devices)
    {
+      if(i < 2 || i > 7)
+      {
+         i++;
+         continue;
+      }
       if(device->pItem1 != nullptr)
       {
          char c = 'X';
@@ -488,7 +493,7 @@ void IIoTFullSystemModel::ShowFieldBusDevices(void)
       {
          cout<<"[ "<<" "<<" "<<flush;
       }
-      (++i % 2) ? cout<<"]---"<<flush : cout<<"]   "<<flush;
+      (i++ % 2) ? cout<<"]   "<<flush : cout<<"]---"<<flush;
    }
    cout<<endl;
 }
