@@ -24,6 +24,7 @@ class FieldBusDevice
  public:
    enum class State{ReadyToProcess, ProcessedA, ProcessedB, ProcessedC, ReadyToSendP, ReadyToSendQ};
    State state = State::ReadyToProcess;
+   unsigned int GUID;
 
    // TODO: Place holder to model preconditions
    unique_ptr<Item> pItem1;
@@ -33,6 +34,10 @@ class FieldBusDevice
    // Eg: Create a response data message P or Q if both preconditions are met.
    // Return a response data message or a null pointer to inform a message is already consumed by this device.
    unique_ptr<Item> ProcessMessages(unique_ptr<Item> ptr);
+   void SetGUID(unsigned int guid)
+   {
+      GUID = guid;
+   }
 };
 
 #endif // _FieldBusDevice
