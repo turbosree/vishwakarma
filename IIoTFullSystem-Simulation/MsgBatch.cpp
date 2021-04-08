@@ -21,12 +21,12 @@ MsgBatch::MsgBatch()
    
    // C _ A B A ->
    
-   Msgs.emplace_back(make_unique<Item>(Type::C));
-   Msgs.emplace_back(make_unique<Item>(Type::X));
+   Msgs.emplace_back(std::make_unique<Item>(Type::C));
+   Msgs.emplace_back(std::make_unique<Item>(Type::X));
    Msgs[1].reset(); // Make it nullptr to represet contains nothing. Used to simulate a simple bus arbitration logic.
-   Msgs.emplace_back(make_unique<Item>(Type::A));
-   Msgs.emplace_back(make_unique<Item>(Type::B));
-   Msgs.emplace_back(make_unique<Item>(Type::A));
+   Msgs.emplace_back(std::make_unique<Item>(Type::A));
+   Msgs.emplace_back(std::make_unique<Item>(Type::B));
+   Msgs.emplace_back(std::make_unique<Item>(Type::A));
 
 
    // C A _ B A ->
@@ -51,4 +51,14 @@ MsgBatch::MsgBatch()
    Msgs[4].reset(); // Make it nullptr to represet contains nothing. Used to simulate a simple bus arbitration logic.
    Msgs.emplace_back(make_unique<Item>(Type::A));
 */
+
+
+   // TODO:
+/*
+   Layered structure of sequences mirroring the protocol stack
+   Generate test vectors
+Ability to overrise a sequence and controlled top down to constrain set of test vectors
+
+*/
+   
 }

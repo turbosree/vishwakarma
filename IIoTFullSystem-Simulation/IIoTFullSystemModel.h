@@ -15,8 +15,6 @@
 #include <memory>
 #include <vector>
 
-using namespace std;
-
 class FieldBusDevice;
 class FieldBus;
 class MsgBatch;
@@ -46,10 +44,10 @@ class IIoTFullSystemModel
    IIoTFullSystemModel(int NumDevices, bool RandomizeBatch);
    
  private:
-   vector<unique_ptr<FieldBusDevice>> Devices;
-   vector<unique_ptr<FieldBus>> Buses;
-   vector<unique_ptr<MsgBatch>> Batches;
-   unique_ptr<MsgBatch> CurrentBatch;
+   std::vector<std::unique_ptr<FieldBusDevice>> Devices;
+   std::vector<std::unique_ptr<FieldBus>> Buses;
+   std::vector<std::unique_ptr<MsgBatch>> Batches;
+   std::unique_ptr<MsgBatch> CurrentBatch;
  
    struct KeyPerformanceIndicators KPIs = {0,0,0,0,0,0,0,0,0,0,0,0};
    int NumOfFieldBuses;

@@ -17,7 +17,7 @@
 /// \param                 fut is the future object which has the data 
 /// \return                Nothing
 // -----------------------------------------------------------------------------
-KPIReport::KPIReport(future<struct KeyPerformanceIndicators>&& fut)
+KPIReport::KPIReport(std::future<struct KeyPerformanceIndicators>&& fut)
    :Future(move(fut))
 {
    // Get data from the real-time thread for further processing
@@ -34,7 +34,7 @@ void KPIReport::Show(void)
    // do someting with data
    Data.UpTime = (Data.NumOfSteps - Data.CurrentStep) * (Data.Period / 1000000);
 
-   cout <<"\nUptime (secs): "<<Data.UpTime
+   std::cout <<"\nUptime (secs): "<<Data.UpTime
         <<"    "<<"TypeA: "<<Data.NoMessagesOfTypeA
         <<"    "<<"TypeB: "<<Data.NoMessagesOfTypeB
         <<"    "<<"TypeC: "<<Data.NoMessagesOfTypeC
@@ -42,7 +42,7 @@ void KPIReport::Show(void)
         <<"    "<<"TypeQ: "<<Data.NoMessagesOfTypeQ
         <<"    "<<"Queued: "<<(Data.TotalMessageInventoryCount * 4) + Data.CurrentBatchPending
         <<"    "<<"Throughput: "<<Data.Throughput
-        << flush;
-   cout<<endl;
+             << std::flush;
+   std::cout<<std::endl;
    //this_thread::sleep_for(chrono::seconds(1));
 }

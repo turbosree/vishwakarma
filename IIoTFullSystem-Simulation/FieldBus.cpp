@@ -15,7 +15,7 @@
 /// \param                 ptr a unique pointer to the item being loaded 
 /// \return                Nothing
 // -----------------------------------------------------------------------------
-void FieldBus::LoadItem(unique_ptr<Item> ptr)
+void FieldBus::LoadItem(std::unique_ptr<Item> ptr)
 {
    pCurrentItem = move(ptr);
 }

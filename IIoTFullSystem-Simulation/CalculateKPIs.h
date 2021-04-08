@@ -10,8 +10,6 @@
 
 #include <future>
 
-using namespace std;
-
 // -----------------------------------------------------------------------------
 /// \class                 CalculateKPIs
 /// \brief                 CalculateKPIs class implements capability to output
@@ -20,8 +18,8 @@ using namespace std;
 class CalculateKPIs
 {
  public:
-   promise<struct KeyPerformanceIndicators> Promise;
-   future<struct KeyPerformanceIndicators> Future;
+   std::promise<struct KeyPerformanceIndicators> Promise;
+   std::future<struct KeyPerformanceIndicators> Future;
    // Move data from real-time thread to normal thread
    CalculateKPIs(struct KeyPerformanceIndicators kpis);
 };

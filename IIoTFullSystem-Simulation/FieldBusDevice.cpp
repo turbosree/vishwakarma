@@ -15,7 +15,7 @@
 ///                        response message or nullptr. nullptr represents that
 ///                        the message was consumed.
 // -----------------------------------------------------------------------------
-unique_ptr<Item> FieldBusDevice::ProcessMessages(unique_ptr<Item> ptr)
+std::unique_ptr<Item> FieldBusDevice::ProcessMessages(std::unique_ptr<Item> ptr)
 {
    State tmp = state; // Note current state
    if(ptr != nullptr)
@@ -27,7 +27,7 @@ unique_ptr<Item> FieldBusDevice::ProcessMessages(unique_ptr<Item> ptr)
          {
             if(pItem1 == nullptr)
             {
-               pItem1 = move(ptr); ptr = make_unique<Item>(Type::X);
+               pItem1 = move(ptr); ptr = std::make_unique<Item>(Type::X);
                state = State::ProcessedA;
             }
          }
@@ -35,7 +35,7 @@ unique_ptr<Item> FieldBusDevice::ProcessMessages(unique_ptr<Item> ptr)
          {
             if(pItem2 == nullptr)
             {
-               pItem2 =  move(ptr); ptr = make_unique<Item>(Type::X);
+               pItem2 =  move(ptr); ptr = std::make_unique<Item>(Type::X);
                state = State::ProcessedB;
             }
          }
@@ -43,7 +43,7 @@ unique_ptr<Item> FieldBusDevice::ProcessMessages(unique_ptr<Item> ptr)
          {
             if(pItem2 == nullptr)
             {
-               pItem2 =  move(ptr); ptr = make_unique<Item>(Type::X);
+               pItem2 =  move(ptr); ptr = std::make_unique<Item>(Type::X);
                state = State::ProcessedC;
             }
          }
@@ -53,7 +53,7 @@ unique_ptr<Item> FieldBusDevice::ProcessMessages(unique_ptr<Item> ptr)
          {
             if(pItem2 == nullptr)
             {
-               pItem2 =  move(ptr); ptr = make_unique<Item>(Type::X);
+               pItem2 =  move(ptr); ptr = std::make_unique<Item>(Type::X);
                state = State::ProcessedB;
             }
          }
@@ -61,7 +61,7 @@ unique_ptr<Item> FieldBusDevice::ProcessMessages(unique_ptr<Item> ptr)
          {
             if(pItem2 == nullptr)
             {
-               pItem2 =  move(ptr); ptr = make_unique<Item>(Type::X);
+               pItem2 =  move(ptr); ptr = std::make_unique<Item>(Type::X);
                state = State::ProcessedC;
             }
          }
@@ -75,7 +75,7 @@ unique_ptr<Item> FieldBusDevice::ProcessMessages(unique_ptr<Item> ptr)
          {
             if(pItem1 == nullptr)
             {
-               pItem1 =  move(ptr); ptr = make_unique<Item>(Type::X);
+               pItem1 =  move(ptr); ptr = std::make_unique<Item>(Type::X);
                state = State::ProcessedA;
             }
          }
@@ -89,7 +89,7 @@ unique_ptr<Item> FieldBusDevice::ProcessMessages(unique_ptr<Item> ptr)
          {
             if(pItem1 == nullptr)
             {
-               pItem1 =  move(ptr); ptr = make_unique<Item>(Type::X);
+               pItem1 =  move(ptr); ptr = std::make_unique<Item>(Type::X);
                state = State::ProcessedA;
             }
          }
@@ -115,7 +115,7 @@ unique_ptr<Item> FieldBusDevice::ProcessMessages(unique_ptr<Item> ptr)
             ptr.reset();
             pItem1.reset();
             pItem2.reset();
-            ptr = make_unique<Item>(Type::P);
+            ptr = std::make_unique<Item>(Type::P);
             state = State::ReadyToProcess;
          }
          break;
@@ -125,7 +125,7 @@ unique_ptr<Item> FieldBusDevice::ProcessMessages(unique_ptr<Item> ptr)
             ptr.reset();
             pItem1.reset();
             pItem2.reset();
-            ptr = make_unique<Item>(Type::Q);
+            ptr = std::make_unique<Item>(Type::Q);
             state = State::ReadyToProcess;
          }
          break;

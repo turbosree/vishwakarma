@@ -13,8 +13,6 @@
 #include <future>
 #include <iostream>
 
-using namespace std;
-
 // -----------------------------------------------------------------------------
 /// \class                 KPIReport
 /// \brief                 KPIReport class implements capability to output
@@ -23,9 +21,9 @@ using namespace std;
 class KPIReport
 {
  public:
-   future<struct KeyPerformanceIndicators> Future;
+   std::future<struct KeyPerformanceIndicators> Future;
    struct KeyPerformanceIndicators Data = {0,0,0,0,0,0,0,0,0,0,0,0};
-   KPIReport(future<struct KeyPerformanceIndicators>&& fut);
+   KPIReport(std::future<struct KeyPerformanceIndicators>&& fut);
    void Show(void);
 };
 

@@ -11,8 +11,6 @@
 #include <memory>
 #include <vector>
 
-using namespace std;
-
 class Item;
 
 // -----------------------------------------------------------------------------
@@ -23,7 +21,7 @@ class Item;
 class MsgBatch
 {
  public:
-   vector<unique_ptr<Item>> Msgs;
+   std::vector<std::unique_ptr<Item>> Msgs;
    MsgBatch();
 };
 

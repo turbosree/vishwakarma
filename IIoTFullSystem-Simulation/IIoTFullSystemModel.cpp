@@ -17,8 +17,6 @@
 #include <time.h>
 #include <stdlib.h>
 
-using namespace std;
-
 // Static variables
 static pthread_t RTThread1 = 0;
 int Item::CreatedCount = 0;
@@ -59,7 +57,7 @@ int RTMakePeriodic(unsigned long period, struct RTTimer* timer)
    ret = clock_gettime(CLOCK_MONOTONIC, &(timer->TimeSpec));
    if(ret == -1)
    {
-      cout<<"Error: clock_gettime returned an error!"<<endl;
+      std::cout<<"Error: clock_gettime returned an error!"<<std::endl;
    }
 
    // First cycle start after a second
@@ -81,7 +79,7 @@ void RTWaitPeriod(struct RTTimer* timer)
    ret = clock_nanosleep(CLOCK_MONOTONIC, TIMER_ABSTIME, &(timer->TimeSpec), NULL);
    if(ret != 0)
    {
-      cout<<"Error"<<endl;
+      std::cout<<"Error"<<std::endl;
       return;
    }
 
@@ -107,13 +105,13 @@ static void* RTThread1Function(void *args)
    struct SimulationArgs* arguments = (struct SimulationArgs*) args; 
 
    unsigned long period = arguments->arg1; // in micro seconds
-   cout<<"Simulation unit of time (cycle) in us: "<<period<<endl;
+   std::cout<<"Simulation unit of time (cycle) in us: "<<period<<std::endl;
    int NumDevices = arguments->arg2; // Number of devices in each bus
-   cout<<"Number of IoT layers in Simulation: "<<NumDevices<<endl;
+   std::cout<<"Number of IoT layers in Simulation: "<<NumDevices<<std::endl;
    int Steps = arguments->arg3; // Number of simulation cycles to run
-   cout<<"Number of steps to run Simulation: "<<Steps<<endl;
+   std::cout<<"Number of steps to run Simulation: "<<Steps<<std::endl;
    bool RandomizeBatch = arguments->arg4; // Randomize messages in batch
-   cout<<"Randomize messages in batch: "<<RandomizeBatch<<endl;
+   std::cout<<"Randomize messages in batch: "<<RandomizeBatch<<std::endl;
    
    //Create a simulation with required number of devices per bus.
    IIoTFullSystemModel Network(NumDevices, RandomizeBatch);
@@ -125,7 +123,7 @@ static void* RTThread1Function(void *args)
       // Cycle accurate fieldbus simulation, implemented as a pipeline.
       // Each stage below modifies the state of the object "Network".
       // In each unit of time(cycle), one iteration through this loop is executed.
-      cout<<"\n\nSimulation cycle:     "<<((arguments->arg3)-Steps)<<endl;
+      std::cout<<"\n\nSimulation cycle:     "<<((arguments->arg3)-Steps)<<std::endl;
 
       Network.ProtocolMsgBatchBuilderStage();
       Network.PushMsgBatchToFieldBusStage();
@@ -134,15 +132,15 @@ static void* RTThread1Function(void *args)
       Network.KPICalculationStage(arguments->arg3, Steps, period);
       Network.MoveForwardFieldBusProtocolStage();
 
-      cout<<"\n\n"<<endl;
+      std::cout<<"\n\n"<<std::endl;
 
       // Wait for next cycle (Deterministic sleep)
       RTWaitPeriod(&timer);
    }while(--Steps);
 
    // We expect all Items destroyed at this point.
-   cout<<"Number of items created: "<<Item::CreatedCount<<endl;
-   cout<<"Number of items destroyed: "<<Item::DestroyedCount<<endl;
+   std::cout<<"Number of items created: "<<Item::CreatedCount<<std::endl;
+   std::cout<<"Number of items destroyed: "<<Item::DestroyedCount<<std::endl;
 
    return 0;
 }
@@ -159,12 +157,12 @@ IIoTFullSystemModel::IIoTFullSystemModel(int ports, bool randomize)
    // 2 additional ports: one for pre-fetching at start of the simulation stages and another for inspection at the end of simulation stages
    for(auto i=0; i<NumOfFieldBuses+2; ++i)
    {
-      auto port = make_unique<FieldBus>();
+      auto port = std::make_unique<FieldBus>();
       Buses.emplace_back(move(port));
 
       for(auto i : {0,1}) // 2 devices per bus. [TODO]
       {
-         auto device = make_unique<FieldBusDevice>();
+         auto device = std::make_unique<FieldBusDevice>();
          Devices.emplace_back(move(device));
       }
    }
@@ -180,8 +178,8 @@ void IIoTFullSystemModel::ProtocolMsgBatchBuilderStage(void)
 {
    // A batch here represent a sequence of messages in a specific bus protocol
    // Eg: A diagnostics protocol to collect error codes from all connected devices
-   auto batch = make_unique<MsgBatch>();
-   Batches.emplace_back(move(batch));
+   auto batch = std::make_unique<MsgBatch>();
+   Batches.emplace_back(std::move(batch));
 }
 
 // -----------------------------------------------------------------------------
@@ -218,7 +216,7 @@ void IIoTFullSystemModel::PushMsgBatchToFieldBusStage(void)
       }
 
       // Show current batch
-      cout<<"Current batch:        "<<flush;
+      std::cout<<"Current batch:        "<<std::flush;
       for(auto& item : CurrentBatch->Msgs)
       {
          if(item != nullptr)
@@ -238,22 +236,22 @@ void IIoTFullSystemModel::PushMsgBatchToFieldBusStage(void)
             default:
                break;
             }
-            cout<<"| "<<c<<" "<<flush;
+            std::cout<<"| "<<c<<" "<<std::flush;
          }
          else
          {
-            cout<<"| "<<" "<<" "<<flush;
+            std::cout<<"| "<<" "<<" "<<std::flush;
          }
       }
-      cout<<"| -->"<<flush;
-      cout<<endl;
+      std::cout<<"| -->"<<std::flush;
+      std::cout<<std::endl;
       
       Buses[0]->LoadItem(move(CurrentBatch->Msgs.back()));
       CurrentBatch->Msgs.pop_back();
    }
    else
    {
-      cout<<"No Batch to push!"<<endl;
+      std::cout<<"No Batch to push!"<<std::endl;
    }
 }
 
@@ -268,7 +266,7 @@ void IIoTFullSystemModel::FieldBusDeviceProcessMsgStage(void)
    // Run all buses and their the respective devices connected [TODO]
    int NumDevicesPerBus = 2;
    // 2 devices per bus. [TODO]
-   vector<int> devices = {0,1};
+   std::vector<int> devices = {0,1};
    for(auto& port : Buses)
    {
       // First and last buses are considered as ingress points and have no devices connected to them.
@@ -279,7 +277,7 @@ void IIoTFullSystemModel::FieldBusDeviceProcessMsgStage(void)
       }
 
       // Choose the devices in a random fashion to process the messages
-      random_shuffle(devices.begin(), devices.end());
+      std::random_shuffle(devices.begin(), devices.end());
       for(auto i : devices) 
       {
          // Message arrive at all devices connected to the bus. But only the device to which the message is destined
@@ -376,8 +374,8 @@ void IIoTFullSystemModel::MoveForwardFieldBusProtocolStage(void)
 
    // Since we poped a port we need to put a new one. Beauty of simulation, don't attempt 
    // in your workplace, it will distroy the hardware!! :D
-   auto port = make_unique<FieldBus>();
-   Buses.emplace(Buses.begin(), move(port));
+   auto port = std::make_unique<FieldBus>();
+   Buses.emplace(Buses.begin(), std::move(port));
    // ShowFieldBus();
    // ShowFieldBusDevices();
 }
@@ -385,7 +383,7 @@ void IIoTFullSystemModel::MoveForwardFieldBusProtocolStage(void)
 void IIoTFullSystemModel::ShowFieldBus(void)
 {
    // Print type of messages appear on the bus
-   cout<<"Bus status:           ";
+   std::cout<<"Bus status:           ";
    for(auto& port : Buses)
    {
       if(port->pCurrentItem != nullptr)
@@ -411,29 +409,29 @@ void IIoTFullSystemModel::ShowFieldBus(void)
          default:
             break;
          }
-         cout<<"| "<<c<<" "<<flush;
+         std::cout<<"| "<<c<<" "<<std::flush;
       }
       else
       {
-         cout<<"| "<<" "<<" "<<flush;
+         std::cout<<"| "<<" "<<" "<<std::flush;
       }
    }
-   cout<<"|"<<flush;
-   cout<<endl;
+   std::cout<<"|"<<std::flush;
+   std::cout<<std::endl;
 }
 
 void IIoTFullSystemModel::ShowFieldBusDevices(void)
 {
    // Print items on the bus
-   cout<<"Device status:        ";
+   std::cout<<"Device status:        ";
    int i = 0;
    for(auto& device : Devices)
    {
-      if(i < 2 || i > 7)
-      {
-         i++;
-         continue;
-      }
+      // if(i < 2 || i > 7)
+      // {
+      //    i++;
+      //    continue;
+      // }
       if(device->pItem1 != nullptr)
       {
          char c = 'X';
@@ -457,13 +455,13 @@ void IIoTFullSystemModel::ShowFieldBusDevices(void)
          default:
             break;
          }
-         cout<<"[ "<<c<<" "<<flush;
+         std::cout<<"[ "<<c<<" "<<std::flush;
       }
       else
       {
-         cout<<"[ "<<" "<<" "<<flush;
+         std::cout<<"[ "<<" "<<" "<<std::flush;
       }
-      cout<<"]"<<flush;
+      std::cout<<"]"<<std::flush;
       if(device->pItem2 != nullptr)
       {
          char c = 'X';
@@ -487,15 +485,16 @@ void IIoTFullSystemModel::ShowFieldBusDevices(void)
          default:
             break;
          }
-         cout<<"[ "<<c<<" "<<flush;
+         std::cout<<"[ "<<c<<" "<<std::flush;
       }
       else
       {
-         cout<<"[ "<<" "<<" "<<flush;
+         std::cout<<"[ "<<" "<<" "<<std::flush;
       }
-      (i++ % 2) ? cout<<"]   "<<flush : cout<<"]---"<<flush;
+      // (i++ % 2) ? cout<<"]   "<<flush : cout<<"]---"<<flush;
+      std::cout<<"]---"<<std::flush;
    }
-   cout<<endl;
+   std::cout<<std::endl;
 }
 
 // -----------------------------------------------------------------------------
@@ -505,12 +504,12 @@ void IIoTFullSystemModel::ShowFieldBusDevices(void)
 // -----------------------------------------------------------------------------
 int main(int argc, char *argv[])
 {
-   cout << "\n\nRunning Simulation with " << argc 
+   std::cout << "\n\nRunning Simulation with " << argc 
         << " arguments: "; 
    for (int i = 0; i < argc; ++i) 
-      cout << argv[i] << " ";
-   cout<<"\n\n"<<endl;
-   cout<<"Results:"<<endl;
+      std::cout << argv[i] << " ";
+   std::cout<<"\n\n"<<std::endl;
+   std::cout<<"Results:"<<std::endl;
 
    struct SimulationArgs args;
    if(argc >= 5)
@@ -533,7 +532,7 @@ int main(int argc, char *argv[])
    int result = pthread_create(&RTThread1, NULL, &RTThread1Function, (void*)&args);
    if(result != 0)
    {
-      cout<<"Error: Thread creation failed!"<<endl;
+      std::cout<<"Error: Thread creation failed!"<<std::endl;
    }
    struct sched_param SchedParam;
    SchedParam.sched_priority = 1;
@@ -543,12 +542,18 @@ int main(int argc, char *argv[])
    }
    if(result != 0)
    {
-      cout<<"Error: Setting real-time scheduling poilicy failed!"<<endl;
+      std::cout<<"Error: Setting real-time scheduling poilicy failed!"<<std::endl;
    }
 
    // Wait for real-time thread to join for gracefully exiting the Simulation
    pthread_join(RTThread1, NULL);
-   cout<<"\n\n"<<endl;
+   std::cout<<"\n\n"<<std::endl;
    
    return 0;
 }
+
+// TODO:
+/*
+Ability to add the simulation as a module in Python
+
+*/

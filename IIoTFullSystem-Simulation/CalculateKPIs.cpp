@@ -24,7 +24,7 @@ CalculateKPIs::CalculateKPIs(struct KeyPerformanceIndicators kpis)
    Future = Promise.get_future();
    Promise.set_value(kpis);
    KPIReport report(move(Future));
-   thread th(&KPIReport::Show, &report);
+   std::thread th(&KPIReport::Show, &report);
    th.join(); // TODO: Use th.detach(); to separate from real-time thread     
 }
 

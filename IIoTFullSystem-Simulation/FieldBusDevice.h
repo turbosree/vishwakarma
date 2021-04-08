@@ -10,8 +10,6 @@
 
 #include <memory>
 
-using namespace std;
-
 class Item;
 
 // -----------------------------------------------------------------------------
@@ -27,13 +25,13 @@ class FieldBusDevice
    unsigned int GUID;
 
    // TODO: Place holder to model preconditions
-   unique_ptr<Item> pItem1;
-   unique_ptr<Item> pItem2;
+   std::unique_ptr<Item> pItem1;
+   std::unique_ptr<Item> pItem2;
 
    // Statemachine implementation representing the device/sensor function and it's method of operation. Different type of devices can create their own behaviours.
    // Eg: Create a response data message P or Q if both preconditions are met.
    // Return a response data message or a null pointer to inform a message is already consumed by this device.
-   unique_ptr<Item> ProcessMessages(unique_ptr<Item> ptr);
+   std::unique_ptr<Item> ProcessMessages(std::unique_ptr<Item> ptr);
    void SetGUID(unsigned int guid)
    {
       GUID = guid;

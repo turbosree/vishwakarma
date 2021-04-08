@@ -12,8 +12,6 @@
 
 #include "SimulationDataTypes.h"
 
-using namespace std;
-
 // -----------------------------------------------------------------------------
 /// \class                 Item
 /// \brief                 Item class represents a generic item managed in 

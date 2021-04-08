@@ -10,8 +10,6 @@
 
 #include <memory>
 
-using namespace std;
-
 class Item;
 
 // -----------------------------------------------------------------------------
@@ -22,8 +20,8 @@ class Item;
 class FieldBus
 {
  public:
-   unique_ptr<Item> pCurrentItem;
-   void LoadItem(unique_ptr<Item> ptr);   
+   std::unique_ptr<Item> pCurrentItem;
+   void LoadItem(std::unique_ptr<Item> ptr);   
 };
 
 
