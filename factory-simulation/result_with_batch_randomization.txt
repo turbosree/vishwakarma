@@ -1,0 +1,1115 @@
+
+
+Running Simulation with 5 arguments: ./RunSimulation 1000000 3 100 1 
+
+
+Results:
+Simulation unit of time (cycle) in us: 1000000
+Number of pairs of workers in Simulation: 3
+Number of steps to run Simulation: 100
+Randomize components in batch: 1
+
+
+Simulation cycle:     0
+Current batch:        | A | B |   | A | C | -->
+Conveyor belt status: | C |   |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 0    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 0    TypeQ: 0    Inventory: 4    Throughput: 0
+
+
+
+
+
+Simulation cycle:     1
+Current batch:        |   | A | B | A | -->
+Conveyor belt status: | A |   |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][   ]---[   ][ C ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 1    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 0    TypeQ: 0    Inventory: 7    Throughput: 0
+
+
+
+
+
+Simulation cycle:     2
+Current batch:        |   | A | B | -->
+Conveyor belt status: | B |   |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][   ]---[ A ][ C ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 2    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 0    TypeQ: 0    Inventory: 10    Throughput: 0
+
+
+
+
+
+Simulation cycle:     3
+Current batch:        | A |   | -->
+Conveyor belt status: |   |   |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][ B ]---[ A ][ C ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 3    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 0    TypeQ: 0    Inventory: 13    Throughput: 0
+
+
+
+
+
+Simulation cycle:     4
+Current batch:        | A | -->
+Conveyor belt status: | A | Q |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][ B ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 4    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 0    TypeQ: 0    Inventory: 16    Throughput: 0
+
+
+
+
+
+Simulation cycle:     5
+Current batch:        |   | C | A | B | A | -->
+Conveyor belt status: | A |   | Q |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 5    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 0    TypeQ: 0    Inventory: 20    Throughput: 0
+
+
+
+
+
+Simulation cycle:     6
+Current batch:        | A | B | C |   | -->
+Conveyor belt status: |   |   |   | Q |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 6    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 0    TypeQ: 0    Inventory: 23    Throughput: 0
+
+
+
+
+
+Simulation cycle:     7
+Current batch:        | A | C | B | -->
+Conveyor belt status: | B | P |   |   | Q |
+Work station status:  [   ][   ]---[   ][   ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 7    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 0    TypeQ: 1    Inventory: 26    Throughput: 1
+
+
+
+
+
+Simulation cycle:     8
+Current batch:        | A | C | -->
+Conveyor belt status: | C |   | P |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][   ]---[ A ][ B ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 8    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 0    TypeQ: 1    Inventory: 29    Throughput: 1
+
+
+
+
+
+Simulation cycle:     9
+Current batch:        | A | -->
+Conveyor belt status: | A |   |   | P |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][ C ]---[ A ][ B ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 9    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 0    TypeQ: 1    Inventory: 32    Throughput: 1
+
+
+
+
+
+Simulation cycle:     10
+Current batch:        | A | A |   | B | C | -->
+Conveyor belt status: | C |   |   |   | P |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ B ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 10    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 1    TypeQ: 1    Inventory: 36    Throughput: 2
+
+
+
+
+
+Simulation cycle:     11
+Current batch:        | A | B | A |   | -->
+Conveyor belt status: |   | C |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ B ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 11    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 1    TypeQ: 1    Inventory: 39    Throughput: 2
+
+
+
+
+
+Simulation cycle:     12
+Current batch:        | A | B | A | -->
+Conveyor belt status: | A | Q |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][   ]---[ A ][ B ]---[   ][   ]---[   ][ C ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 12    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 1    TypeQ: 1    Inventory: 42    Throughput: 2
+
+
+
+
+
+Simulation cycle:     13
+Current batch:        | A | B | -->
+Conveyor belt status: | B |   | Q |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][   ]---[ A ][ B ]---[   ][   ]---[   ][ C ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 13    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 1    TypeQ: 1    Inventory: 45    Throughput: 2
+
+
+
+
+
+Simulation cycle:     14
+Current batch:        | A | -->
+Conveyor belt status: | A |   |   | Q |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][ B ]---[   ][   ]---[   ][ C ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 14    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 1    TypeQ: 1    Inventory: 48    Throughput: 2
+
+
+
+
+
+Simulation cycle:     15
+Current batch:        | B |   | A | A | C | -->
+Conveyor belt status: | C | A |   |   | Q |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][ B ]---[   ][   ]---[   ][ C ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 15    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 1    TypeQ: 2    Inventory: 52    Throughput: 3
+
+
+
+
+
+Simulation cycle:     16
+Current batch:        | A | B | A |   | -->
+Conveyor belt status: |   | C |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][ B ]---[   ][   ]---[ A ][ C ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 16    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 1    TypeQ: 2    Inventory: 55    Throughput: 3
+
+
+
+
+
+Simulation cycle:     17
+Current batch:        | B | A | A | -->
+Conveyor belt status: | A | P |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[   ][   ]---[   ][ C ]---[ A ][ C ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 17    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 1    TypeQ: 2    Inventory: 58    Throughput: 3
+
+
+
+
+
+Simulation cycle:     18
+Current batch:        | A | B | -->
+Conveyor belt status: | B |   | P |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][   ]---[   ][ C ]---[ A ][ C ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 18    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 1    TypeQ: 2    Inventory: 61    Throughput: 3
+
+
+
+
+
+Simulation cycle:     19
+Current batch:        | A | -->
+Conveyor belt status: | A |   | Q | P |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][ B ]---[   ][ C ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 19    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 1    TypeQ: 2    Inventory: 64    Throughput: 3
+
+
+
+
+
+Simulation cycle:     20
+Current batch:        | C | A | B | A |   | -->
+Conveyor belt status: |   | A |   | Q | P |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][ B ]---[   ][ C ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 20    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 2    TypeQ: 2    Inventory: 68    Throughput: 4
+
+
+
+
+
+Simulation cycle:     21
+Current batch:        | A | C | A | B | -->
+Conveyor belt status: | B | P |   |   | Q |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[   ][   ]---[ A ][ C ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 21    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 2    TypeQ: 3    Inventory: 71    Throughput: 5
+
+
+
+
+
+Simulation cycle:     22
+Current batch:        | C | A | A | -->
+Conveyor belt status: | A |   | P |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[   ][ B ]---[ A ][ C ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 22    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 2    TypeQ: 3    Inventory: 74    Throughput: 5
+
+
+
+
+
+Simulation cycle:     23
+Current batch:        | A | C | -->
+Conveyor belt status: | C |   | Q | P |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][ B ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 23    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 2    TypeQ: 3    Inventory: 77    Throughput: 5
+
+
+
+
+
+Simulation cycle:     24
+Current batch:        | A | -->
+Conveyor belt status: | A | C |   | Q | P |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][ B ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 24    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 3    TypeQ: 3    Inventory: 80    Throughput: 6
+
+
+
+
+
+Simulation cycle:     25
+Current batch:        | A |   | C | B | A | -->
+Conveyor belt status: | A | A |   |   | Q |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][ B ]---[   ][ C ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 25    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 3    TypeQ: 4    Inventory: 84    Throughput: 7
+
+
+
+
+
+Simulation cycle:     26
+Current batch:        | C |   | B | A | -->
+Conveyor belt status: | A | A |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][ B ]---[   ][ C ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 26    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 3    TypeQ: 4    Inventory: 87    Throughput: 7
+
+
+
+
+
+Simulation cycle:     27
+Current batch:        | C |   | B | -->
+Conveyor belt status: | B | A |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][ B ]---[ A ][ C ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 27    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 3    TypeQ: 4    Inventory: 90    Throughput: 7
+
+
+
+
+
+Simulation cycle:     28
+Current batch:        | C |   | -->
+Conveyor belt status: |   | B | A |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][ B ]---[ A ][ C ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 28    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 3    TypeQ: 4    Inventory: 93    Throughput: 7
+
+
+
+
+
+Simulation cycle:     29
+Current batch:        | C | -->
+Conveyor belt status: | C | P |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[   ][   ]---[ A ][ C ]---[ A ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 29    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 3    TypeQ: 4    Inventory: 96    Throughput: 7
+
+
+
+
+
+Simulation cycle:     30
+Current batch:        | B | C |   | A | A | -->
+Conveyor belt status: | A |   | P |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[   ][ C ]---[ A ][ C ]---[ A ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 30    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 3    TypeQ: 4    Inventory: 100    Throughput: 7
+
+
+
+
+
+Simulation cycle:     31
+Current batch:        | B |   | C | A | -->
+Conveyor belt status: | A |   | P | P |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][ C ]---[ A ][ C ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 31    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 3    TypeQ: 4    Inventory: 103    Throughput: 7
+
+
+
+
+
+Simulation cycle:     32
+Current batch:        |   | C | B | -->
+Conveyor belt status: | B | A | Q | P | P |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][ C ]---[   ][   ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 32    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 4    TypeQ: 4    Inventory: 106    Throughput: 8
+
+
+
+
+
+Simulation cycle:     33
+Current batch:        | C |   | -->
+Conveyor belt status: |   | B |   | Q | P |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][ C ]---[ A ][   ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 33    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 5    TypeQ: 4    Inventory: 109    Throughput: 9
+
+
+
+
+
+Simulation cycle:     34
+Current batch:        | C | -->
+Conveyor belt status: | C | P |   |   | Q |
+Work station status:  [   ][   ]---[   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][   ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 34    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 5    TypeQ: 5    Inventory: 112    Throughput: 10
+
+
+
+
+
+Simulation cycle:     35
+Current batch:        | C | B | A |   | A | -->
+Conveyor belt status: | A |   | P |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][ C ]---[ A ][ C ]---[ A ][   ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 35    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 5    TypeQ: 5    Inventory: 116    Throughput: 10
+
+
+
+
+
+Simulation cycle:     36
+Current batch:        | C | A | B |   | -->
+Conveyor belt status: |   |   |   | P |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[ A ][   ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 36    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 5    TypeQ: 5    Inventory: 119    Throughput: 10
+
+
+
+
+
+Simulation cycle:     37
+Current batch:        | A | B | C | -->
+Conveyor belt status: | C | Q |   |   | P |
+Work station status:  [   ][   ]---[   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][   ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 37    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 6    TypeQ: 5    Inventory: 122    Throughput: 11
+
+
+
+
+
+Simulation cycle:     38
+Current batch:        | A | B | -->
+Conveyor belt status: | B |   | Q |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][ C ]---[ A ][ C ]---[ A ][   ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 38    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 6    TypeQ: 5    Inventory: 125    Throughput: 11
+
+
+
+
+
+Simulation cycle:     39
+Current batch:        | A | -->
+Conveyor belt status: | A | B |   | Q |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][ C ]---[ A ][ C ]---[ A ][   ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 39    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 6    TypeQ: 5    Inventory: 128    Throughput: 11
+
+
+
+
+
+Simulation cycle:     40
+Current batch:        |   | A | C | A | B | -->
+Conveyor belt status: | B |   |   |   | Q |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[ A ][ B ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 40    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 6    TypeQ: 6    Inventory: 132    Throughput: 12
+
+
+
+
+
+Simulation cycle:     41
+Current batch:        | A | C | A |   | -->
+Conveyor belt status: |   | B | P |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[   ][   ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 41    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 6    TypeQ: 6    Inventory: 135    Throughput: 12
+
+
+
+
+
+Simulation cycle:     42
+Current batch:        | A | C | A | -->
+Conveyor belt status: | A | Q |   | P |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[   ][   ]---[   ][ B ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 42    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 6    TypeQ: 6    Inventory: 138    Throughput: 12
+
+
+
+
+
+Simulation cycle:     43
+Current batch:        | C | A | -->
+Conveyor belt status: | A |   | Q |   | P |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][   ]---[   ][ B ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 43    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 7    TypeQ: 6    Inventory: 141    Throughput: 13
+
+
+
+
+
+Simulation cycle:     44
+Current batch:        | C | -->
+Conveyor belt status: | C | A |   | Q |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][   ]---[   ][ B ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 44    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 7    TypeQ: 6    Inventory: 144    Throughput: 13
+
+
+
+
+
+Simulation cycle:     45
+Current batch:        |   | C | A | B | A | -->
+Conveyor belt status: | A |   |   |   | Q |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[   ][ B ]---[ A ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 45    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 7    TypeQ: 7    Inventory: 148    Throughput: 14
+
+
+
+
+
+Simulation cycle:     46
+Current batch:        | C | B | A |   | -->
+Conveyor belt status: |   | A | P |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[   ][ B ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 46    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 7    TypeQ: 7    Inventory: 151    Throughput: 14
+
+
+
+
+
+Simulation cycle:     47
+Current batch:        | B | C | A | -->
+Conveyor belt status: | A | Q |   | P |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[   ][   ]---[ A ][ B ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 47    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 7    TypeQ: 7    Inventory: 154    Throughput: 14
+
+
+
+
+
+Simulation cycle:     48
+Current batch:        | B | C | -->
+Conveyor belt status: | C |   | Q |   | P |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][   ]---[ A ][ B ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 48    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 8    TypeQ: 7    Inventory: 157    Throughput: 15
+
+
+
+
+
+Simulation cycle:     49
+Current batch:        | B | -->
+Conveyor belt status: | B |   | P | Q |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[   ][   ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 49    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 8    TypeQ: 7    Inventory: 160    Throughput: 15
+
+
+
+
+
+Simulation cycle:     50
+Current batch:        | A | B |   | A | C | -->
+Conveyor belt status: | C | B |   | P | Q |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[   ][   ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 50    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 8    TypeQ: 8    Inventory: 164    Throughput: 16
+
+
+
+
+
+Simulation cycle:     51
+Current batch:        | B |   | A | A | -->
+Conveyor belt status: | A | C |   |   | P |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[   ][   ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 51    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 8    Inventory: 167    Throughput: 17
+
+
+
+
+
+Simulation cycle:     52
+Current batch:        | A | B |   | -->
+Conveyor belt status: |   | A |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[   ][ C ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 52    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 8    Inventory: 170    Throughput: 17
+
+
+
+
+
+Simulation cycle:     53
+Current batch:        | B | A | -->
+Conveyor belt status: | A | Q |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[   ][   ]---[ A ][ C ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 53    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 8    Inventory: 173    Throughput: 17
+
+
+
+
+
+Simulation cycle:     54
+Current batch:        | B | -->
+Conveyor belt status: | B |   | Q |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][   ]---[ A ][ C ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 54    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 8    Inventory: 176    Throughput: 17
+
+
+
+
+
+Simulation cycle:     55
+Current batch:        |   | C | A | A | B | -->
+Conveyor belt status: | B |   | Q | Q |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ B ]---[   ][   ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 55    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 8    Inventory: 180    Throughput: 17
+
+
+
+
+
+Simulation cycle:     56
+Current batch:        | A | C | A |   | -->
+Conveyor belt status: |   | B |   | Q | Q |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ B ]---[   ][   ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 56    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 9    Inventory: 183    Throughput: 18
+
+
+
+
+
+Simulation cycle:     57
+Current batch:        | A | A | C | -->
+Conveyor belt status: | C | Q |   |   | Q |
+Work station status:  [   ][   ]---[   ][   ]---[   ][   ]---[ A ][ B ]---[   ][ B ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 57    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 10    Inventory: 186    Throughput: 19
+
+
+
+
+
+Simulation cycle:     58
+Current batch:        | A | A | -->
+Conveyor belt status: | A |   | Q |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][ C ]---[ A ][ B ]---[   ][ B ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 58    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 10    Inventory: 189    Throughput: 19
+
+
+
+
+
+Simulation cycle:     59
+Current batch:        | A | -->
+Conveyor belt status: | A |   |   | Q |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ B ]---[   ][ B ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 59    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 10    Inventory: 192    Throughput: 19
+
+
+
+
+
+Simulation cycle:     60
+Current batch:        | B | C | A |   | A | -->
+Conveyor belt status: | A | A |   |   | Q |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ B ]---[   ][ B ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 60    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 11    Inventory: 196    Throughput: 20
+
+
+
+
+
+Simulation cycle:     61
+Current batch:        | C | A |   | B | -->
+Conveyor belt status: | B | A |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ B ]---[   ][ B ]---[ A ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 61    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 11    Inventory: 199    Throughput: 20
+
+
+
+
+
+Simulation cycle:     62
+Current batch:        |   | C | A | -->
+Conveyor belt status: | A | B |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ B ]---[ A ][ B ]---[ A ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 62    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 11    Inventory: 202    Throughput: 20
+
+
+
+
+
+Simulation cycle:     63
+Current batch:        | C |   | -->
+Conveyor belt status: |   | A | B |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ B ]---[ A ][ B ]---[ A ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 63    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 11    Inventory: 205    Throughput: 20
+
+
+
+
+
+Simulation cycle:     64
+Current batch:        | C | -->
+Conveyor belt status: | C | Q | A |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][ B ]---[ A ][ B ]---[ A ][   ]---[   ][ B ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 64    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 11    Inventory: 208    Throughput: 20
+
+
+
+
+
+Simulation cycle:     65
+Current batch:        | C | A | A | B |   | -->
+Conveyor belt status: |   |   | Q |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][ C ]---[ A ][ B ]---[ A ][ B ]---[ A ][ B ]---[ A ][   ]---[ A ][ B ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 65    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 11    Inventory: 212    Throughput: 20
+
+
+
+
+
+Simulation cycle:     66
+Current batch:        | A | B | A | C | -->
+Conveyor belt status: | C | P | P | Q |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][ C ]---[   ][   ]---[ A ][ B ]---[   ][   ]---[ A ][   ]---[ A ][ B ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 66    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 11    Inventory: 215    Throughput: 20
+
+
+
+
+
+Simulation cycle:     67
+Current batch:        | B | A | A | -->
+Conveyor belt status: | A |   | P | P | Q |
+Work station status:  [   ][   ]---[   ][   ]---[   ][ C ]---[   ][ C ]---[ A ][ B ]---[   ][   ]---[ A ][   ]---[ A ][ B ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 67    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 9    TypeQ: 12    Inventory: 218    Throughput: 21
+
+
+
+
+
+Simulation cycle:     68
+Current batch:        | B | A | -->
+Conveyor belt status: | A |   | P | P | P |
+Work station status:  [   ][   ]---[   ][   ]---[   ][ C ]---[ A ][ C ]---[   ][   ]---[   ][   ]---[ A ][   ]---[ A ][ B ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 68    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 10    TypeQ: 12    Inventory: 221    Throughput: 22
+
+
+
+
+
+Simulation cycle:     69
+Current batch:        | B | -->
+Conveyor belt status: | B |   |   | P | P |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[   ][   ]---[   ][   ]---[ A ][   ]---[ A ][ B ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 69    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 11    TypeQ: 12    Inventory: 224    Throughput: 23
+
+
+
+
+
+Simulation cycle:     70
+Current batch:        | A | B | A | C |   | -->
+Conveyor belt status: |   | B |   | P | P |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[   ][   ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 70    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 12    TypeQ: 12    Inventory: 228    Throughput: 24
+
+
+
+
+
+Simulation cycle:     71
+Current batch:        | B | C | A | A | -->
+Conveyor belt status: | A | Q |   |   | P |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[   ][   ]---[   ][ B ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 71    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 13    TypeQ: 12    Inventory: 231    Throughput: 25
+
+
+
+
+
+Simulation cycle:     72
+Current batch:        | C | B | A | -->
+Conveyor belt status: | A |   | Q |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][   ]---[   ][ B ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 72    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 13    TypeQ: 12    Inventory: 234    Throughput: 25
+
+
+
+
+
+Simulation cycle:     73
+Current batch:        | B | C | -->
+Conveyor belt status: | C | A |   | Q |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][   ]---[   ][ B ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 73    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 13    TypeQ: 12    Inventory: 237    Throughput: 25
+
+
+
+
+
+Simulation cycle:     74
+Current batch:        | B | -->
+Conveyor belt status: | B |   |   |   | Q |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[ A ][ B ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 74    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 13    TypeQ: 13    Inventory: 240    Throughput: 26
+
+
+
+
+
+Simulation cycle:     75
+Current batch:        | A | C |   | B | A | -->
+Conveyor belt status: | A | B | P |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[   ][   ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 75    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 13    TypeQ: 13    Inventory: 244    Throughput: 26
+
+
+
+
+
+Simulation cycle:     76
+Current batch:        | A | B | C |   | -->
+Conveyor belt status: |   | A |   | P |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[   ][   ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 76    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 13    TypeQ: 13    Inventory: 247    Throughput: 26
+
+
+
+
+
+Simulation cycle:     77
+Current batch:        | A | B | C | -->
+Conveyor belt status: | C | Q |   |   | P |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 77    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 14    TypeQ: 13    Inventory: 250    Throughput: 27
+
+
+
+
+
+Simulation cycle:     78
+Current batch:        | B | A | -->
+Conveyor belt status: | A |   | Q |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[   ][ C ]---[   ][   ]---[ A ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 78    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 14    TypeQ: 13    Inventory: 253    Throughput: 27
+
+
+
+
+
+Simulation cycle:     79
+Current batch:        | B | -->
+Conveyor belt status: | B |   | P | Q |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[   ][   ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 79    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 14    TypeQ: 13    Inventory: 256    Throughput: 27
+
+
+
+
+
+Simulation cycle:     80
+Current batch:        | B | A | C | A |   | -->
+Conveyor belt status: |   | B |   | P | Q |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[   ][   ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 80    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 14    TypeQ: 14    Inventory: 260    Throughput: 28
+
+
+
+
+
+Simulation cycle:     81
+Current batch:        | A | C | B | A | -->
+Conveyor belt status: | A | Q |   |   | P |
+Work station status:  [   ][   ]---[   ][   ]---[   ][   ]---[ A ][ C ]---[   ][ B ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 81    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 15    TypeQ: 14    Inventory: 263    Throughput: 29
+
+
+
+
+
+Simulation cycle:     82
+Current batch:        | B | A | C | -->
+Conveyor belt status: | C |   | Q |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][   ]---[ A ][ C ]---[   ][ B ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 82    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 15    TypeQ: 14    Inventory: 266    Throughput: 29
+
+
+
+
+
+Simulation cycle:     83
+Current batch:        | A | B | -->
+Conveyor belt status: | B |   |   | Q |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[   ][ B ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 83    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 15    TypeQ: 14    Inventory: 269    Throughput: 29
+
+
+
+
+
+Simulation cycle:     84
+Current batch:        | A | -->
+Conveyor belt status: | A | B |   |   | Q |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[   ][ B ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 84    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 15    TypeQ: 15    Inventory: 272    Throughput: 30
+
+
+
+
+
+Simulation cycle:     85
+Current batch:        |   | B | C | A | A | -->
+Conveyor belt status: | A | A |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[   ][ B ]---[   ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 85    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 15    TypeQ: 15    Inventory: 276    Throughput: 30
+
+
+
+
+
+Simulation cycle:     86
+Current batch:        | A |   | B | C | -->
+Conveyor belt status: | C | A |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[   ][ B ]---[ A ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 86    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 15    TypeQ: 15    Inventory: 279    Throughput: 30
+
+
+
+
+
+Simulation cycle:     87
+Current batch:        | B |   | A | -->
+Conveyor belt status: | A | C |   |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[ A ][ B ]---[ A ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 87    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 15    TypeQ: 15    Inventory: 282    Throughput: 30
+
+
+
+
+
+Simulation cycle:     88
+Current batch:        | B |   | -->
+Conveyor belt status: |   | A | C |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ C ]---[ A ][ B ]---[ A ][ B ]---[ A ][   ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 88    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 15    TypeQ: 15    Inventory: 285    Throughput: 30
+
+
+
+
+
+Simulation cycle:     89
+Current batch:        | B | -->
+Conveyor belt status: | B | Q | A |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][ B ]---[ A ][ B ]---[ A ][ C ]---[   ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 89    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 15    TypeQ: 15    Inventory: 288    Throughput: 30
+
+
+
+
+
+Simulation cycle:     90
+Current batch:        |   | C | A | A | B | -->
+Conveyor belt status: | B |   | Q |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][ B ]---[ A ][ C ]---[ A ][ B ]---[ A ][ B ]---[ A ][ C ]---[ A ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 90    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 15    TypeQ: 15    Inventory: 292    Throughput: 30
+
+
+
+
+
+Simulation cycle:     91
+Current batch:        | A |   | C | A | -->
+Conveyor belt status: | A | B | P | Q |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][ B ]---[ A ][ C ]---[ A ][ B ]---[   ][   ]---[ A ][ C ]---[ A ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 91    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 15    TypeQ: 15    Inventory: 295    Throughput: 30
+
+
+
+
+
+Simulation cycle:     92
+Current batch:        |   | C | A | -->
+Conveyor belt status: | A |   |   | P | Q |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][ C ]---[ A ][ B ]---[   ][ B ]---[ A ][ C ]---[ A ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 92    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 15    TypeQ: 16    Inventory: 298    Throughput: 31
+
+
+
+
+
+Simulation cycle:     93
+Current batch:        |   | C | -->
+Conveyor belt status: | C | A | P | Q | P |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][ C ]---[   ][   ]---[   ][ B ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 93    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 16    TypeQ: 16    Inventory: 301    Throughput: 32
+
+
+
+
+
+Simulation cycle:     94
+Current batch:        |   | -->
+Conveyor belt status: |   | C |   | P | Q |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ B ]---[ A ][ C ]---[   ][   ]---[ A ][ B ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 94    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 16    TypeQ: 17    Inventory: 304    Throughput: 33
+
+
+
+
+
+Simulation cycle:     95
+Current batch:        |   | B | A | A | C | -->
+Conveyor belt status: | C | P |   |   | P |
+Work station status:  [   ][   ]---[   ][   ]---[   ][   ]---[ A ][ C ]---[   ][ C ]---[ A ][ B ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 95    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 17    TypeQ: 17    Inventory: 308    Throughput: 34
+
+
+
+
+
+Simulation cycle:     96
+Current batch:        | B | A | A |   | -->
+Conveyor belt status: |   |   | P |   |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][ C ]---[ A ][ C ]---[   ][ C ]---[ A ][ B ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 96    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 17    TypeQ: 17    Inventory: 311    Throughput: 34
+
+
+
+
+
+Simulation cycle:     97
+Current batch:        | A | B | A | -->
+Conveyor belt status: | A | Q | P | P |   |
+Work station status:  [   ][   ]---[   ][   ]---[   ][ C ]---[   ][   ]---[   ][ C ]---[   ][   ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 97    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 17    TypeQ: 17    Inventory: 314    Throughput: 34
+
+
+
+
+
+Simulation cycle:     98
+Current batch:        | B | A | -->
+Conveyor belt status: | A |   | Q | P | P |
+Work station status:  [   ][   ]---[   ][   ]---[   ][ C ]---[ A ][   ]---[   ][ C ]---[   ][   ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 98    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 18    TypeQ: 17    Inventory: 317    Throughput: 35
+
+
+
+
+
+Simulation cycle:     99
+Current batch:        | B | -->
+Conveyor belt status: | B |   |   | Q | P |
+Work station status:  [   ][   ]---[   ][   ]---[ A ][ C ]---[ A ][   ]---[   ][ C ]---[   ][   ]---[   ][   ]---[ A ][   ]---[   ][   ]---[   ][   ]---
+
+Uptime (secs): 99    TypeA: 0    TypeB: 0    TypeC: 0    TypeP: 19    TypeQ: 17    Inventory: 320    Throughput: 36
+
+
+
+Number of items created: 616
+Number of items destroyed: 289
+
+
+

@@ -1,0 +1,71 @@
+#+BEGIN_EXAMPLE
+
+
+
+
+
+                                                        +---------------------------------+                    +------------------------+
+                                                        |       ComponentBatch            |                    |     Item               |
+      +--------------------------------+                |                                 |                    |                        |
+      |        WorkerStation           |                |   + ComponentBatch()            |                    |  + Type                |
+      |                                |                |                                 |                    |                        |
+      |  + AssembleProduct()           |                |   + Components                  |                    |                        |
+      |                                |                |                                 |                    |                        |
+      |  + State                       +--+             |                                 |                    |                        |
+      |  + Item1                       |  |             |                                 |                    |                        |
+      |  + Item2                       |  |             |                                 |                    |                        |
+      |                                |  |             +-----------------+---------------+                    |                        |
+      |                                |  |                               |                                    +------------------------+
+      +--------------------------------+  |                               |
+                                          |        +----------------------+----------------------------+
+                                          |        |                FactoryProductionLine              |                      +----------------------+
+                                          |        |                                                   |                      |     CalculateKPIs    |
+  +----------------------+                |        |    + ComponentBatchBuilderStage()                 |                      |                      |
+  |  SimulationDataTypes |                |        |    + LoadComponentStage()                         |                      |  + CalculateKPIs()   |
+  |                      |                +--------+    + ConveyorBeltSlotWorkerStage()                +----------------------+                      |
+  | + Type               |                         |    + ConveyorBeltSlotInspectionStage()            |                      |  + Future            |
+  | + KPIs               |                         |    + KPICalculationStage()                        |                      |  + Promise           |
+  |                      |                         |    + MoveForwardBeltStage()                       |                      |                      |
+  |                      |                         |    - CurrentBatch                                 |                      |                      |
+  |                      |                         |    - KPIs                                         |                      |                      |
+  |                      |               +---------+    - NumOfConveyorBeltSlots                       |                      +-----------+----------+
+  |                      |               |         |    - RandomizeCurrentBatch                        |                                  |
+  |                      |               |         |    - Stations                                     |                                  | 
+  |                      |               |         |    - ConveyorBelt                                 |                                  | 
+  |                      |               |         |    - Batches                                      |                                  | 
+  +----------------------+               |         +---------------------------+-----------------------+                                  |  
+                                         |                                     |                                              +-----------+------------+
+                                         |                                     |Instantiate and execute                       |    KPIReport           |
+      +-------------------------------+  |                                     |                                              |                        |
+      |      CoveyorBeltSlot          |  |                     +---------------+--------------------+                         | + Show()               |
+      |                               |  |                     |          RealTimeThread            |                         |                        |
+      |  + LoadItem()                 |  |                     |                                    |                         | + Future               |
+      |                               +--+                     |    + RTThread1Function()           |                         | + Data                 |
+      |  + CurrentItem                |                        |    + RTMakePeriodic()              |                         |                        |
+      |                               |                        |    + RTWaitPeriod()                |                         |                        |
+      |                               |                        |                                    |                         |                        |
+      |                               |                        |    + RTTimer                       |                         +------------------------+
+      |                               |                        |                                    |
+      |                               |                        |                                    |
+      +-------------------------------+                        |                                    |
+                                                               |                                    |
+                                                               +------------------------------------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+END_EXAMPLE
