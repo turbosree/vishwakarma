@@ -1,0 +1,65 @@
+#// ------------------------------------------------------------------------------------------------
+#/// \file                  Yaml file to deploy the simulation as a service on a kubernetese cluster 
+#/// \author                Sreejith.Naarakathil@gmail.com
+#/// \date                  27/3/2021
+#// ------------------------------------------------------------------------------------------------
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iiot-sim
+spec:
+  selector:
+    matchLabels:
+      app: iiot-sim
+  replicas: 1 # 1
+  template:
+    metadata:
+      labels:
+        app: iiot-sim
+    spec:
+      containers:
+      - name: iiot-sim
+        image: iiot-sim:1.0.1
+        env:
+        - name: IIOT_SIM_LOG_LEVEL
+          value: "1"
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        livenessProbe:
+          failureThreshold: 3
+          initialDelaySeconds: 30
+          periodSeconds: 10    
+          successThreshold: 1
+          tcpSocket:
+            port: 8080
+          timeoutSeconds: 1
+        readinessProbe:
+          failureThreshold: 3
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          successThreshold: 1
+          tcpSocket:
+            port: 8080
+          timeoutSeconds: 1
+          resources:
+          limits:
+          # memory: 128Mi
+          securityContext:
+          # privileged: false
+
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: iiot-sim
+spec:
+  ports:
+    - protocol: TCP
+      port: 8080    
+      targetPort: 8080
+  selector:
+    app: iiot-sim
